@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melhores-tudo.com | Recomendações e Guias de Compra</title>
+  <meta name="description" content="Guias simples e diretos com as melhores recomendações: ventiladores, fones bluetooth e muito mais." />
+  <link rel="canonical" href="https://melhores-tudo.com/" />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --card:#f9fafb;
+      --brand:#2563eb;
+      --brandHover:#1d4ed8;
+      --max:1000px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:18px}
+    header{
+      border-bottom:1px solid var(--border);
+      background:#fff;
+    }
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; flex-wrap:wrap;
+    }
+    .brand{
+      display:flex; flex-direction:column;
+      text-decoration:none;
+    }
+    .brand b{font-size:18px}
+    .brand span{color:var(--muted); font-size:13px}
+    nav{display:flex; gap:8px; flex-wrap:wrap}
+    nav a{
+      text-decoration:none;
+      padding:8px 10px;
+      border-radius:10px;
+      color:var(--muted);
+      font-weight:600;
+    }
+    nav a:hover{background:var(--card); color:var(--text)}
+    .hero{
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:var(--card);
+      margin-top:16px;
+    }
+    .hero h1{margin:0 0 6px; font-size:26px}
+    .hero p{margin:0; color:var(--muted)}
+    .section-title{
+      margin:22px 0 10px;
+      font-size:18px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:12px;
+    }
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:14px;
+      background:#fff;
+    }
+    .card h2{margin:0 0 6px; font-size:16px}
+    .card p{margin:0 0 12px; color:var(--muted); font-size:14px}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:var(--brand);
+      color:#fff;
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:700;
+      font-size:14px;
+    }
+    .btn:hover{background:var(--brandHover)}
+    footer{
+      margin-top:26px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .note{
+      margin-top:10px;
+      padding:12px;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:#fff;
+      color:var(--muted);
+      font-size:13px;
+    }
+    @media (max-width:720px){
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:22px}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container topbar">
+      <a class="brand" href="index.html">
+        <b>Melhores-tudo.com</b>
+        <span>Recomendações simples e diretas</span>
+      </a>
+
+      <nav aria-label="Navegação">
+        <a href="index.html">Início</a>
+        <a href="ventiladores.html">Ventiladores</a>
+        <a href="#" title="Crie depois uma página para isso">Fones Bluetooth</a>
+        <a href="#" title="Crie depois uma página para isso">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Guias fáceis para escolher bem.</h1>
+      <p>
+        Aqui você encontra listas de “melhores do ano” com prós, contras e um botão de compra com link de afiliado.
+      </p>
+    </section>
+
+    <h2 class="section-title">Guias em destaque</h2>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Melhores ventiladores (2026)</h2>
+        <p>Lista por custo-benefício, silêncio e potência — com links de compra.</p>
+        <a class="btn" href="ventiladores.html">Ver guia de ventiladores</a>
+      </article>
+
+      <article class="card">
+        <h2>Melhores fones Bluetooth (em breve)</h2>
+        <p>Você pode criar uma página igual à de ventiladores e colocar suas recomendações.</p>
+        <a class="btn" href="#" onclick="alert('Crie a página: fones-bluetooth.html'); return false;">Criar depois</a>
+      </article>
+    </section>
+
+    <div class="note">
+      <b>Transparência:</b> este site pode conter links de afiliado. Se você comprar por eles, o site pode receber comissão
+      sem custo extra para você.
+    </div>
+
+    <footer class="container" style="padding-left:0; padding-right:0;">
+      <div style="padding:16px 0;">
+        © <span id="year"></span> Melhores-tudo.com • Conteúdo independente • Preços podem mudar
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
